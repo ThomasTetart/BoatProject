@@ -1,0 +1,43 @@
+.banner {
+  text-align: center;
+  margin: 0px auto 0px auto;
+  padding-top:10px;
+  padding-bottom:10px;
+  background-color: #DEDEDE;
+}
+
+.banner img {
+  width: 260px;
+  height: 114px;
+  cursor:pointer;
+}
+
+.menu {
+  position: relative;
+  height: 50px;
+  background: linear-gradient(to left, #4A4A4A, #5E5E5E,#4A4A4A);
+}
+
+.right {
+  position: absolute;
+  right: 20px;
+  list-style: none;
+  color: white;
+  border-right: solid 1px white;
+  border-left: solid 1px white;
+}
+
+ul {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+ul li {
+  cursor: pointer;
+  line-height: 40px;
+  padding: 5px;
+}
+
+ul li:hover {
+  color: lightgray;
+}

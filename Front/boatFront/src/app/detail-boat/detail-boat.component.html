@@ -1,0 +1,40 @@
+<div class="content" *ngIf="currentBoat">
+
+  <h1>Détail du bateau <strong>{{currentBoat.name}}</strong></h1>
+
+  <div class="sous-menu">
+    <button class="btn btn-danger" (click)="toDeleteBoat()">Supprimer le bateau</button>
+  </div>
+
+  <form [formGroup]="boatForm" (submit)="updateBoat()">
+
+    <div>
+      <mat-form-field class="input">
+        <input matInput placeholder="Nom" formControlName="name">
+        <mat-error *ngIf="su && name.hasError('required')">
+          Nom est <strong>requi</strong>
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <mat-form-field class="input">
+        <input id="password" matInput placeholder="Description du bateau" formControlName="description">
+        <mat-error *ngIf="su && description.hasError('required')">
+          Remarque est <strong>requi</strong>
+        </mat-error>
+
+      </mat-form-field>
+    </div>
+
+    <div>
+
+      <div class="submit-form">
+        <input type="submit" value="Valider modification" class="btn btn-success" />
+      </div>
+
+    </div>
+
+  </form>
+
+</div>

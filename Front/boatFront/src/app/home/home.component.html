@@ -1,0 +1,29 @@
+<div class="content">
+  <h1>Bienvenue sur l'application little boat!</h1>
+  <div class="sous-menu">
+    <button class="btn btn-primary" (click)="toNewBoat()">Nouveau bateau</button>
+  </div>
+  <div class="noBoat" *ngIf="listBoat && listBoat.length == 0">
+    <h2>Vous n'avez pas enregistr&eacute; de bateau</h2>
+  </div>
+
+  <div class="noBoat" *ngIf="listBoat && listBoat.length > 0">
+
+    <table>
+      <thead>
+        <tr><td>Name</td><td>Desription</td></tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let boat of listBoat" (click)="toDetail(boat)">
+          <td>{{boat.name}}</td>
+          <td>{{boat.description}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+
+</div>
+
+

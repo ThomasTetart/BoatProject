@@ -1,0 +1,27 @@
+.noBoat {
+  padding: 25px;
+}
+
+table{
+  margin:auto;
+  min-width:400px;
+}
+
+thead {
+  background-color: lightgray;
+  font-weight:bold;
+  font-size:18px;
+}
+
+tr {
+  border: solid 1px grey;
+  cursor: pointer;
+}
+
+td{
+  padding:20px;
+}
+
+tbody tr:hover{
+  background-color:gray;
+}
